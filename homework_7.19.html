@@ -1,0 +1,73 @@
+<script="text/javascript">
+
+// Given a string, print the string uppercased. #string #easy
+var str = "blah blah blah";
+str.toUpperCase();
+
+// Given a string, print the string capitalized. #string #easy
+
+var str = "here's a lowercase sentence";
+function capitalize(string){
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+capitalize(str);
+
+
+// Given a string, print the string reversed. #string #loop #easy
+
+var str = "Here's a string to reverse";
+function reverse(string){
+	return string.split("").reverse().join("");
+}	
+reverse(str);
+
+// Given a string, print "<string> is a palindrome" if it is a palindrome, or "<string> is not a palindrome" if it is not. 
+// What is a palindrome? Here is a list of know palindromes to test with 
+// (you will have to strip out the punctuation and spaces and normalize the casing) <http://www.palindromelist.net/>
+
+var string = "Avid diva";
+
+function checkPalindrome(str){
+	str = str.toLowerCase().replace(re, '');
+	var len = str.length;
+	for (var i = 0; i < len/2; i++) {
+		if (str[i] !== str[len - 1 - i]) {
+       		return false;
+  		}
+ 	}
+ return true;
+}
+
+checkPalindrome(string);
+
+// Given a paragraph of text, print the number of words in the paragraph. #string #easy
+var para = "There should be clearer separation responsibility between the DOM-interaction and text-translation layers of code. The text translation code should reside in pure functions (whose results depend solely on their parameters) hat you could call from the JavaScript console or from a unit testing engine. That separation of concerns could be accomplished with:"
+
+function wordCount(string){
+	var words = string.split(" ");
+	return words.length;
+}
+
+wordCount(para);
+
+//  Word Summary
+// Given a paragraph of text, for each word present in the paragraph, print the number of times the word was used in the paragraph. Example: for the sentence: "The Caesar cipher is one of the earliest known and simplest ciphers." The output should be:
+
+// ```
+// the: 2
+// caesar: 1
+// cipher: 2
+// is: 1
+// one: 1
+// of: 1
+// earliest: 1
+// known: 1
+// and: 1
+// simplest: 1
+// ```
+
+// The order in which the words are printed doesn't matter. #loop #string #medium  
+
+var para = "There should be clearer separation responsibility between the DOM-interaction and text-translation layers of code. The text translation code should reside in pure functions (whose results depend solely on their parameters) hat you could call from the JavaScript console or from a unit testing engine. That separation of concerns could be accomplished with:"
+
+</script>
